@@ -1,0 +1,15 @@
+{
+  "name": "sprint_3_views",
+  "version": "1.0.0",
+  "description": "3 sprint 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
+
+  },
+  "author": "AngelicaRoy",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
+}
