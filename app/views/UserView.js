@@ -1,4 +1,4 @@
-const User=require('./../models/User')
+const User=require('./../app/models/User')
 
 class UserView{
     static createUser(username, name, id){
