@@ -2,8 +2,19 @@ const User=require('./../../app/models/User')
 
 class UserView{
     static createUser(payload){
-        return new User(payload);
-    }
+        if(payload === null){
+          console.log("Error es el valor null")
+          return {
+              error: "El payload no existe."
+            }
+        } else if(typeof payload.username === 'string' && typeof payload.name === 'string' && typeof payload.id === 'number') {
+          return UserService.create(payload.id, payload.username, payload.name)
+        } else{
+          return {
+              error: "Error, los valores del payload necesitan tener un valor válido"
+            }
+        }
+      }
 }
 
 module.exports=UserView;
