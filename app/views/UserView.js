@@ -1,8 +1,8 @@
-const User=require('./../app/models/User')
+const User=require('./../../app/models/User')
 
 class UserView{
-    static createUser(username, name, id){
-        return new User(username, name, id)
+    static createUser(payload){
+        return new User(payload);
     }
 }
 
